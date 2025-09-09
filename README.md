@@ -8,6 +8,9 @@ Geschrieben wird ein OpenProject-Dashboard, das per API relevante Projektdaten a
 
 Ein erster Express-Backend-Prototyp befindet sich im Ordner `backend`.
 
+Ein einfaches Frontend für die Nutzerinteraktion befindet sich im Ordner
+`frontend` und greift per Fetch-API auf das Backend zu.
+
 ### Lokal starten
 
 ```bash
@@ -29,6 +32,9 @@ Ein Dockerfile ist unter `backend/Dockerfile` vorhanden. Die Daten werden in ein
 ```bash
 docker build -t op-dashboard-backend backend
 # oder mit docker compose
-# docker compose up --build
+docker compose up --build
 ```
+
+Das Frontend wird über Nginx ausgeliefert und ist unter Port `8080`
+erreichbar, das Backend unter Port `3000`.
 

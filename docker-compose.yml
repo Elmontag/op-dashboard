@@ -7,5 +7,11 @@ services:
     volumes:
       - backend-data:/usr/src/app/data
     restart: unless-stopped
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
 volumes:
   backend-data:
