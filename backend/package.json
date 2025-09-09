@@ -12,6 +12,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^7.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3"
   }
 }
